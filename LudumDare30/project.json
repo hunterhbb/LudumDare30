@@ -14,6 +14,12 @@
         "src/resource.js",
         "src/app.js",
         "src/GameLayer.js",
-        "src/BkgLayer.js"
+        "src/BkgLayer.js",
+        "src/TestLayer.js",
+        "src/Man.js",
+        "src/MoveController.js",
+        "src/Cover.js",
+        "src/UILayer.js"
+
     ]
 }

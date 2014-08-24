@@ -3,9 +3,14 @@
  */
 
 
-
+var BKG_LAYER_TAG = 11;
+var COVER_LAYER_TAG = 12;
+var UI_LAYER_TAG = 13;
 
 var GameLayer = cc.Layer.extend({
+
+    isBegin : false,
+    isOver : false,
 
     init : function () {
         if ( ! this._super() ){
@@ -19,21 +24,61 @@ var GameLayer = cc.Layer.extend({
         this._super();
 
 
-        var sprite = new cc.Sprite.create(res.Man_0_png);
-        this.addChild(sprite);
+        var man = Man.create();
+        this.addChild(man);
 
-        var animation = new cc.Animation();
-        animation.addSpriteFrameWithFile(res.Man_0_png);
-        animation.addSpriteFrameWithFile(res.Man_1_png);
-        animation.setDelayPerUnit(0.5);
-        animation.setLoops(1);
-        var animate = new cc.Animate(animation);
+//        var animation = new cc.Animation();
+//        animation.addSpriteFrameWithFile(res.Man_Down_png);
+//        animation.addSpriteFrameWithFile(res.Man_Down_png);
+//        animation.setDelayPerUnit(0.5);
+//        animation.setLoops(1);
+//        var animate = new cc.Animate(animation);
+//
+//        sprite.runAction(new cc.RepeatForever(animate));
 
-        sprite.runAction(new cc.RepeatForever(animate));
+        man.x = 24;
+        man.y = winsize.height - 24;
 
-        sprite.x = winsize.width/2;
-        sprite.y = winsize.height/2;
+        var bkg_layer = this.getParent().getChildByTag(BKG_LAYER_TAG);
+        MoveController.init(man, bkg_layer.map, this);
 
+
+        this.scheduleUpdate();
+
+//        this.isBegin = true;
+    },
+
+    beginGame : function () {
+
+        this.isBegin = true;
+
+        this.getParent().getChildByTag(COVER_LAYER_TAG).updateCover();
+    },
+
+    gameOver : function () {
+
+        this.isOver = true;
+
+        this.getParent().getChildByTag(UI_LAYER_TAG).showGameOverMenu();
+
+    },
+
+    gameWin : function () {
+
+        this.isOver = true;
+
+        this.getParent().getChildByTag(UI_LAYER_TAG).showGameWinMenu();
+
+    },
+
+
+    update : function (dt) {
+
+        if(this.isBegin && !this.isOver){
+
+            MoveController.update(dt);
+
+        }
 
     }
 
@@ -55,8 +100,18 @@ GameLayer.scene = function () {
     var layer = GameLayer.create();
 
     var bkg_layer = BkgLayer.create();
+    bkg_layer.setTag(BKG_LAYER_TAG);
     scene.addChild(bkg_layer);
 
     scene.addChild(layer);
+
+    var cover_layer = Cover.create();
+    cover_layer.setTag(COVER_LAYER_TAG);
+    scene.addChild(cover_layer);
+
+    var ui_layer = UILayer.create();
+    ui_layer.setTag(UI_LAYER_TAG);
+    scene.addChild(ui_layer);
+
     return scene;
 };

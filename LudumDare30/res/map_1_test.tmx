@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="36" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="terrain" tilewidth="16" tileheight="16" spacing="2" margin="2">
+  <image source="terrain.png" width="182" height="20"/>
+ </tileset>
+ <tileset firstgid="11" name="floor" tilewidth="16" tileheight="16">
+  <image source="floor.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="12" name="wall" tilewidth="16" tileheight="16">
+  <image source="wall.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="13" name="wall_trap" tilewidth="16" tileheight="16">
+  <image source="wall_trap.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="14" name="crystal" tilewidth="16" tileheight="16">
+  <image source="crystal.png" width="16" height="16"/>
+ </tileset>
+ <layer name="地板" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DQQ0AAAwDofvXv99ZmABIWDVVVfX1AGffW8ZACwAA
+  </data>
+ </layer>
+ <layer name="墙壁" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA81UywrAIAzzOvD/v3eHMRiSl62HBWRT25ha2zkezB+N8fl20eFhetx6GhfaZzxVPQ7MXvme0JPeDzsT+STvh9kyv0QPW0NnKO3qnCu0Q0B6EtsEjjvJV7duqv1D5Sv1VXzrHtOa6NnpFWkMKar1pfi6A+lJ6svVMIsnmau7r+rp5NK9FabHaazkCXHvxqb6R5XHxag4XB2v/2ju9Lg3nvaExJ/ZOf0d7PCd6BunxosbNHHV/0ALAAA=
+  </data>
+ </layer>
+ <layer name="陷阱" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAVDHfDiYFNizkgAo2E1CkYBdQEt8sVwzmvY/DYU/IvuRkL8UTAKhiMAAEvSM3pACwAA
+  </data>
+ </layer>
+ <layer name="水晶" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgYGDgYxj8YCi4cRRQH9Az3kfT2CgYBcMfDFQ+Hy1fhj8YCXE8EvxIDACFAwBpsT3SQAsAAA==
+  </data>
+ </layer>
+</map>

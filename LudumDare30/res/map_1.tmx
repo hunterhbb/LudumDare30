@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="36" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="terrain" tilewidth="16" tileheight="16" spacing="2" margin="2">
+  <image source="terrain.png" width="182" height="20"/>
+ </tileset>
+ <tileset firstgid="11" name="floor" tilewidth="16" tileheight="16">
+  <image source="floor.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="12" name="wall" tilewidth="16" tileheight="16">
+  <image source="wall.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="13" name="wall_trap" tilewidth="16" tileheight="16">
+  <image source="wall_trap.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="14" name="crystal" tilewidth="16" tileheight="16">
+  <image source="crystal.png" width="16" height="16"/>
+ </tileset>
+ <layer name="地板" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DQQ0AAAwDofvXv99ZmABIWDVVVfX1AGffW8ZACwAA
+  </data>
+ </layer>
+ <layer name="墙壁" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA82UXQ6AMAiDd4Dd/7y+mgXKR5mJJEQlUIr87LXW/pmu13MqHRzKp7JPcJz/o+yVZP401uVD6zrfVQyZn8y38ld8MluUQ3EneZx+kTqzGCondqdf7rxP74fqlyMqt+JK+GRxBHcq7n4pvKlGfMh+VTuc1UO+6R3p8JnOo5qVKCe5TU6fIuxubep+uDhVjQrjxvxUfOiMVz3K7LRfX0kH/8bduK0P32sx2EALAAA=
+  </data>
+ </layer>
+ <layer name="陷阱" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAVDHfDiYFNizkgA1PDvSAszfGA0LEbBaBogDWALr6EQhuhuJMQfBaNgOAIAnVUpGkALAAA=
+  </data>
+ </layer>
+ <layer name="水晶" width="36" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGHyAj0ixUTD8AT3jfTSNjYJRMPzBQOXz0fJl+IOREMcD4cfBGq4ACrw7y0ALAAA=
+  </data>
+ </layer>
+ <objectgroup name="wall_collide" width="36" height="20">
+  <object x="1" y="1" width="13" height="316"/>
+  <object x="33" y="0" width="13" height="110"/>
+  <object x="49" y="97" width="61" height="12"/>
+  <object x="16" y="1" width="559" height="13"/>
+  <object x="81" y="31" width="29" height="45"/>
+  <object x="129" y="33" width="13" height="76"/>
+  <object x="15" y="129" width="127" height="12"/>
+  <object x="177" y="33" width="125" height="11"/>
+  <object x="177" y="47" width="13" height="46"/>
+  <object x="161" y="81" width="13" height="59"/>
+  <object x="33" y="161" width="62" height="12"/>
+  <object x="33" y="177" width="12" height="29"/>
+  <object x="48" y="193" width="61" height="12"/>
+  <object x="99" y="209" width="11" height="28"/>
+  <object x="50" y="225" width="49" height="13"/>
+  <object x="33" y="241" width="29" height="13"/>
+  <object x="33" y="257" width="13" height="29"/>
+  <object x="17" y="305" width="558" height="14"/>
+  <object x="561" y="15" width="14" height="287"/>
+  <object x="321" y="16" width="12" height="93"/>
+  <object x="225" y="65" width="77" height="12"/>
+  <object x="289" y="97" width="13" height="13"/>
+  <object x="258" y="96" width="13" height="13"/>
+  <object x="209" y="81" width="29" height="11"/>
+  <object x="209" y="96" width="13" height="13"/>
+  <object x="209" y="129" width="125" height="12"/>
+  <object x="241" y="145" width="13" height="13"/>
+  <object x="273" y="144" width="13" height="14"/>
+  <object x="128" y="161" width="94" height="12"/>
+  <object x="129" y="175" width="13" height="29"/>
+  <object x="193" y="193" width="13" height="44"/>
+  <object x="209" y="225" width="13" height="13"/>
+  <object x="65" y="273" width="14" height="13"/>
+  <object x="81" y="257" width="13" height="29"/>
+  <object x="96" y="257" width="30" height="13"/>
+  <object x="113" y="272" width="77" height="14"/>
+  <object x="241" y="193" width="13" height="77"/>
+  <object x="225" y="257" width="29" height="12"/>
+  <object x="273" y="177" width="13" height="94"/>
+  <object x="287" y="176" width="256" height="13"/>
+  <object x="385" y="190" width="13" height="15"/>
+  <object x="449" y="192" width="13" height="14"/>
+  <object x="513" y="192" width="13" height="13"/>
+  <object x="353" y="113" width="13" height="45"/>
+  <object x="367" y="144" width="80" height="13"/>
+  <object x="369" y="31" width="13" height="94"/>
+  <object x="383" y="32" width="14" height="13"/>
+  <object x="417" y="46" width="13" height="79"/>
+  <object x="450" y="32" width="111" height="13"/>
+  <object x="528" y="65" width="14" height="108"/>
+  <object x="448" y="63" width="15" height="31"/>
+  <object x="463" y="63" width="47" height="14"/>
+  <object x="497" y="78" width="13" height="16"/>
+  <object x="448" y="113" width="63" height="13"/>
+  <object x="497" y="126" width="13" height="31"/>
+  <object x="321" y="208" width="14" height="45"/>
+  <object x="304" y="241" width="46" height="13"/>
+  <object x="336" y="225" width="174" height="13"/>
+  <object x="529" y="225" width="14" height="60"/>
+  <object x="273" y="272" width="77" height="13"/>
+  <object x="369" y="273" width="142" height="13"/>
+  <object x="385" y="256" width="14" height="48"/>
+  <object x="448" y="256" width="15" height="15"/>
+  <object x="496" y="15" width="64" height="15"/>
+  <object x="210" y="273" width="29" height="13"/>
+  <object x="129" y="225" width="13" height="13"/>
+  <object x="418" y="33" width="12" height="11"/>
+  <object x="161" y="176" width="13" height="62"/>
+ </objectgroup>
+ <objectgroup name="trap_collide" width="36" height="20">
+  <object x="65" y="49" width="14" height="13"/>
+  <object x="113" y="49" width="13" height="12"/>
+  <object x="145" y="50" width="13" height="12"/>
+  <object x="193" y="81" width="14" height="13"/>
+  <object x="113" y="177" width="13" height="13"/>
+  <object x="145" y="177" width="14" height="13"/>
+  <object x="177" y="209" width="13" height="14"/>
+  <object x="209" y="210" width="13" height="12"/>
+  <object x="354" y="50" width="13" height="12"/>
+  <object x="386" y="50" width="12" height="12"/>
+  <object x="433" y="82" width="13" height="12"/>
+  <object x="258" y="210" width="13" height="11"/>
+  <object x="289" y="209" width="13" height="13"/>
+  <object x="354" y="209" width="12" height="14"/>
+  <object x="418" y="209" width="12" height="13"/>
+  <object x="481" y="210" width="13" height="13"/>
+  <object x="353" y="241" width="14" height="13"/>
+  <object x="417" y="241" width="14" height="13"/>
+  <object x="482" y="240" width="13" height="15"/>
+  <object x="178" y="96" width="13" height="15"/>
+  <object x="385" y="112" width="13" height="13"/>
+  <object x="466" y="81" width="12" height="13"/>
+  <object x="370" y="130" width="12" height="11"/>
+  <object x="449" y="98" width="13" height="11"/>
+ </objectgroup>
+ <objectgroup name="crystal_collide" width="36" height="20">
+  <object x="96" y="16" width="15" height="15"/>
+  <object x="241" y="81" width="13" height="15"/>
+  <object x="385" y="64" width="15" height="16"/>
+  <object x="208" y="193" width="15" height="15"/>
+  <object x="113" y="209" width="13" height="15"/>
+  <object x="81" y="289" width="14" height="15"/>
+  <object x="321" y="255" width="14" height="15"/>
+  <object x="544" y="287" width="14" height="15"/>
+  <object x="17" y="17" width="14" height="14"/>
+ </objectgroup>
+</map>
