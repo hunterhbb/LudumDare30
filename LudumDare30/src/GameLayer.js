@@ -11,6 +11,7 @@ var GameLayer = cc.Layer.extend({
 
     isBegin : false,
     isOver : false,
+    man : null,
 
     init : function () {
         if ( ! this._super() ){
@@ -24,8 +25,8 @@ var GameLayer = cc.Layer.extend({
         this._super();
 
 
-        var man = Man.create();
-        this.addChild(man);
+        this.man = Man.create();
+        this.addChild(this.man);
 
 //        var animation = new cc.Animation();
 //        animation.addSpriteFrameWithFile(res.Man_Down_png);
@@ -36,11 +37,13 @@ var GameLayer = cc.Layer.extend({
 //
 //        sprite.runAction(new cc.RepeatForever(animate));
 
-        man.x = 24;
-        man.y = winsize.height - 24;
+        this.man.x = 24;
+        this.man.y = winsize.height - 24;
 
         var bkg_layer = this.getParent().getChildByTag(BKG_LAYER_TAG);
-        MoveController.init(man, bkg_layer.map, this);
+        MoveController.init(this.man, bkg_layer.map, this);
+
+        HunterController.init(this.man, this);
 
 
         this.scheduleUpdate();
@@ -48,11 +51,16 @@ var GameLayer = cc.Layer.extend({
 //        this.isBegin = true;
     },
 
+
+
     beginGame : function () {
 
         this.isBegin = true;
 
         this.getParent().getChildByTag(COVER_LAYER_TAG).updateCover();
+
+        HunterController.createHunter();
+
     },
 
     gameOver : function () {
@@ -78,6 +86,7 @@ var GameLayer = cc.Layer.extend({
 
             MoveController.update(dt);
 
+            HunterController.update(dt);
         }
 
     }

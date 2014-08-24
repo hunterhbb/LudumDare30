@@ -18,6 +18,11 @@ var res = {
     Man_Right_png : "res/man_right.png",
     Man_Blood_png : "res/man_blood.png",
 
+    Hunter_Up_png : "res/hunter_up.png",
+    Hunter_Down_png : "res/hunter_down.png",
+    Hunter_Left_png : "res/hunter_left.png",
+    Hunter_Right_png : "res/hunter_right.png",
+
     Terrain_png : "res/terrain.png",
     Wall_png : "res/wall.png",
     Wall_Trap_png : "res/wall_trap.png",

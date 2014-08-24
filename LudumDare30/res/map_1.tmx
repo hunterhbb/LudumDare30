@@ -38,18 +38,18 @@
  <objectgroup name="wall_collide" width="36" height="20">
   <object x="1" y="1" width="13" height="316"/>
   <object x="33" y="0" width="13" height="110"/>
-  <object x="49" y="97" width="61" height="12"/>
+  <object x="49" y="97" width="60" height="11"/>
   <object x="16" y="1" width="559" height="13"/>
   <object x="81" y="31" width="29" height="45"/>
   <object x="129" y="33" width="13" height="76"/>
-  <object x="15" y="129" width="127" height="12"/>
+  <object x="15" y="129" width="126" height="12"/>
   <object x="177" y="33" width="125" height="11"/>
   <object x="177" y="47" width="13" height="46"/>
   <object x="161" y="81" width="13" height="59"/>
   <object x="33" y="161" width="62" height="12"/>
   <object x="33" y="177" width="12" height="29"/>
   <object x="48" y="193" width="61" height="12"/>
-  <object x="99" y="209" width="11" height="28"/>
+  <object x="99" y="209" width="10" height="28"/>
   <object x="50" y="225" width="49" height="13"/>
   <object x="33" y="241" width="29" height="13"/>
   <object x="33" y="257" width="13" height="29"/>
@@ -57,14 +57,14 @@
   <object x="561" y="15" width="14" height="287"/>
   <object x="321" y="16" width="12" height="93"/>
   <object x="225" y="65" width="77" height="12"/>
-  <object x="289" y="97" width="13" height="13"/>
-  <object x="258" y="96" width="13" height="13"/>
+  <object x="290" y="97" width="12" height="13"/>
+  <object x="259" y="97" width="11" height="13"/>
   <object x="209" y="81" width="29" height="11"/>
   <object x="209" y="96" width="13" height="13"/>
   <object x="209" y="129" width="125" height="12"/>
   <object x="241" y="145" width="13" height="13"/>
   <object x="273" y="144" width="13" height="14"/>
-  <object x="128" y="161" width="94" height="12"/>
+  <object x="127" y="162" width="94" height="11"/>
   <object x="129" y="175" width="13" height="29"/>
   <object x="193" y="193" width="13" height="44"/>
   <object x="209" y="225" width="13" height="13"/>
@@ -92,16 +92,16 @@
   <object x="448" y="113" width="63" height="13"/>
   <object x="497" y="126" width="13" height="31"/>
   <object x="321" y="208" width="14" height="45"/>
-  <object x="304" y="241" width="46" height="13"/>
-  <object x="336" y="225" width="174" height="13"/>
+  <object x="304" y="241" width="45" height="12"/>
+  <object x="336" y="225" width="173" height="13"/>
   <object x="529" y="225" width="14" height="60"/>
   <object x="273" y="272" width="77" height="13"/>
-  <object x="369" y="273" width="142" height="13"/>
+  <object x="371" y="273" width="138" height="12"/>
   <object x="385" y="256" width="14" height="48"/>
   <object x="448" y="256" width="15" height="15"/>
   <object x="496" y="15" width="64" height="15"/>
   <object x="210" y="273" width="29" height="13"/>
-  <object x="129" y="225" width="13" height="13"/>
+  <object x="129" y="225" width="12" height="13"/>
   <object x="418" y="33" width="12" height="11"/>
   <object x="161" y="176" width="13" height="62"/>
  </objectgroup>
@@ -141,5 +141,16 @@
   <object x="321" y="255" width="14" height="15"/>
   <object x="544" y="287" width="14" height="15"/>
   <object x="17" y="17" width="14" height="14"/>
+ </objectgroup>
+ <objectgroup name="hunter_born" width="36" height="20">
+  <object x="274" y="97" width="11" height="12"/>
+  <object x="146" y="178" width="12" height="13"/>
+  <object x="467" y="81" width="11" height="11"/>
+  <object x="305" y="226" width="13" height="12"/>
+  <object x="162" y="18" width="12" height="12"/>
+  <object x="529" y="193" width="12" height="13"/>
+  <object x="400" y="17" width="14" height="13"/>
+  <object x="34" y="227" width="12" height="12"/>
+  <object x="208" y="258" width="13" height="11"/>
  </objectgroup>
 </map>

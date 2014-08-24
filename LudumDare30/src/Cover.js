@@ -45,7 +45,7 @@ var Cover = cc.Layer.extend({
                 var sprite = new cc.Sprite(batch_node.texture);
                 sprite.x = x;
                 sprite.y = y;
-
+//                sprite.setOpacity(0);
                 batch_node.addChild(sprite);
 
                 this.cover_objs[i][k] = sprite;
