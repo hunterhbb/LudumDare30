@@ -4,6 +4,7 @@ cc.game.onStart = function(){
     cc.view.adjustViewPort(true);
     cc.view.setDesignResolutionSize(576, 320, cc.ResolutionPolicy.EXACT_FIT);
     cc.view.resizeWithBrowserSize(true);
+    cc.director.setDisplayStats(false);
 
     winsize = cc.director.getWinSize();
 
